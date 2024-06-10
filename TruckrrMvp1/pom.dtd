@@ -1,0 +1,13 @@
+<!ELEMENT project (modelVersion,groupId,artifactId,version,name,dependencies,properties,build)>
+<!ELEMENT modelVersion (#PCDATA)>
+<!ELEMENT groupId (#PCDATA)>
+<!ELEMENT artifactId (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT dependencies (dependency+)>
+<!ELEMENT dependency (groupId,artifactId,version,scope?)>
+<!ELEMENT scope (#PCDATA)>
+<!ELEMENT properties (project.build.sourceEncoding)>
+<!ELEMENT project.build.sourceEncoding (#PCDATA)>
+<!ELEMENT build (defaultGoal)>
+<!ELEMENT defaultGoal (#PCDATA)>
